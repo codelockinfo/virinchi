@@ -379,6 +379,29 @@
         "autoplay_speed": 7
       }
     },
+    "1649066304309c82b3": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "The Time Advantage",
+        "title_size": 28,
+        "text": "<p>FACTORY TO HOME, LOWEST PRICE FOR YOU<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify:\/\/shop_images\/img-3-2_1920x_57c6e47c-70b5-42bb-958a-58fa17bfff50.jpg",
+        "video": "",
+        "image_width": 70,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": "",
+        "list": "<ul class=\"dc-list-text\">   <li>AFFORDABLE<\/li>   <li>LIGHTNING FAST<\/li>   <li>DURABLE<\/li> <\/ul>"
+      }
+    },
     "1649065805e325aec1": {
       "type": "image-with-text",
       "settings": {
@@ -462,6 +485,7 @@
     },
     "1649066125b46a74bb": {
       "type": "background-video",
+      "disabled": true,
       "settings": {
         "video": "https:\/\/youtu.be\/lthjvb0JeIY",
         "subheading": "",
@@ -478,29 +502,6 @@
         "height_mobile": 500,
         "full_width": true,
         "overlay_style_tint": true
-      }
-    },
-    "1649066304309c82b3": {
-      "type": "image-with-text",
-      "settings": {
-        "subheading": "",
-        "title": "The Time Advantage",
-        "title_size": 28,
-        "text": "<p>FACTORY TO HOME, LOWEST PRICE FOR YOU<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "text_alignment": "left",
-        "text_width": 50,
-        "button_style": "auto",
-        "image": "shopify:\/\/shop_images\/img-3-2_1920x_57c6e47c-70b5-42bb-958a-58fa17bfff50.jpg",
-        "video": "",
-        "image_width": 70,
-        "image_position": "right",
-        "media_size": "contain",
-        "color_scheme": "alt",
-        "color_bg": "",
-        "color_text": "",
-        "list": "<ul class=\"dc-list-text\">   <li>AFFORDABLE<\/li>   <li>LIGHTNING FAST<\/li>   <li>DURABLE<\/li> <\/ul>"
       }
     },
     "1649067036cf346dc5": {
@@ -715,12 +716,12 @@
     "16488981973a09e660",
     "image-with-text",
     "1649064100b496efda",
+    "1649066304309c82b3",
     "1649065805e325aec1",
     "background-video",
     "newsletter",
     "featured-blog",
     "1649066125b46a74bb",
-    "1649066304309c82b3",
     "1649067036cf346dc5",
     "16490674286307efc3",
     "164907070469a1e74e",
