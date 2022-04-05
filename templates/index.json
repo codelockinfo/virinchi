@@ -643,6 +643,40 @@
     },
     "1649139371483fd2b8": {
       "type": "homeslider",
+      "blocks": {
+        "517a0beb-ca73-4307-8389-cf30000d346e": {
+          "type": "block",
+          "settings": {
+            "videolink": "",
+            "kome": "shopify:\/\/shop_images\/img5_2048x_04633ee6-6a3a-44c3-b871-b57644493cbf.jpg",
+            "shopbtn": "",
+            "shopurl": ""
+          }
+        },
+        "c1acfa62-7c68-48c7-872a-ff07bf3cef59": {
+          "type": "block",
+          "settings": {
+            "videolink": "",
+            "kome": "shopify:\/\/shop_images\/img-3-1_1920x_5081ba8e-92c4-4144-95f3-706acb8af73a.jpg",
+            "shopbtn": "",
+            "shopurl": ""
+          }
+        },
+        "ec77abad-31c8-4821-979c-2bf53be5cb6d": {
+          "type": "block",
+          "settings": {
+            "videolink": "",
+            "kome": "shopify:\/\/shop_images\/img-3-3_1920x_35c20053-0fb3-4a31-8532-46e9852201a5.jpg",
+            "shopbtn": "",
+            "shopurl": ""
+          }
+        }
+      },
+      "block_order": [
+        "517a0beb-ca73-4307-8389-cf30000d346e",
+        "c1acfa62-7c68-48c7-872a-ff07bf3cef59",
+        "ec77abad-31c8-4821-979c-2bf53be5cb6d"
+      ],
       "settings": {
         "title": "WELCOME TO THE NEW STANDARD IN MODULAR FURNITURE",
         "align_text": "left"
