@@ -3,7 +3,7 @@
   <h2 class="custom-title" style="text-align:{{section.settings.align_text}}">{{section.settings.title}}</h2>
 </div>
 <div class="slider_contain">
-  <div class="slider_flex homeslide">
+  <div class="slider_flex furnityre">
     {% for block in section.blocks %}
     <div class="postrel">
     <div class="slider_drop">
@@ -23,14 +23,12 @@
     {% endfor %}
   </div>
 </div>
-
-
 </div>
 
 
 {% schema %}
   {
-  "name": "homeslider",
+  "name": "furnutureslider",
   "settings": [
   {
     "id" : "title",
@@ -88,8 +86,8 @@
   ],
   "presets" : [
   {
-    "name" : "homeslider",
-    "category" : "homeslider"
+    "name" : "furnutureslider",
+    "category" : "furnutureslider"
     }
   ]
   }
@@ -97,7 +95,7 @@
 
   <script>
 
-$('.homeslide').slick({
+$('.furnityre').slick({
   dots: true,
   infinite: true,
   speed: 300,

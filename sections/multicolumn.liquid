@@ -2,13 +2,16 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="dc-multicolumn-section">
+<div class="dc-multicolumn-section custom_lorem">
     <h2 class="dc-h2">{{section.settings.title}}</h2>
     <h4 class="dc-h4">{{section.settings.subtitle}}</h4>
     <div class="dc-multicolumn-container">
         {%- for block in section.blocks -%}
         <div class="dc-multi-column-item">
             <div>{{block.settings.title}}</div>
+            {% if block.settings.kom2 != blank %}
+            <img src="{{block.settings.kom2 | img_url:'master'}}" alt="logo">
+            {% endif %}
             <p>{{block.settings.text}}</p>
         </div>
       {%- endfor -%}
@@ -41,7 +44,7 @@
         "settings": [
           {
             "type": "image_picker",
-            "id": "image",
+            "id": "kom2",
             "label": "image"
           },
           {
@@ -66,6 +69,7 @@
             "id": "link",
             "label": "link"
           }
+        
         ]
       }
     ],
