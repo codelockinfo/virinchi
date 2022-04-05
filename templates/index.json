@@ -1,5 +1,12 @@
 {
   "sections": {
+    "164916108832c8450e": {
+      "type": "homeslider",
+      "settings": {
+        "title": "WELCOME TO THE NEW STANDARD IN MODULAR FURNITURE",
+        "align_text": "center"
+      }
+    },
     "164905775062c98c81": {
       "type": "rich-text",
       "disabled": true,
@@ -603,11 +610,13 @@
     "1649139371483fd2b8": {
       "type": "homeslider",
       "settings": {
-        "title": "WELCOME TO THE NEW STANDARD IN MODULAR FURNITURE"
+        "title": "WELCOME TO THE NEW STANDARD IN MODULAR FURNITURE",
+        "align_text": "left"
       }
     }
   },
   "order": [
+    "164916108832c8450e",
     "164905775062c98c81",
     "slideshow",
     "16488949989fd11ddf",
