@@ -1,0 +1,55 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1648893560bc1a008f": {
+      "type": "accordions",
+      "blocks": {
+        "164889356075ab9abf-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Title",
+            "text": "<p>Add the content to appear when the content is expanded<\/p>",
+            "open": false
+          }
+        },
+        "164889356075ab9abf-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Title",
+            "text": "<p>Add the content to appear when the content is expanded<\/p>",
+            "open": false
+          }
+        },
+        "164889356075ab9abf-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Title",
+            "text": "<p>Add the content to appear when the content is expanded<\/p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "164889356075ab9abf-0",
+        "164889356075ab9abf-1",
+        "164889356075ab9abf-2"
+      ],
+      "settings": {
+        "title": "Expandable content",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1648893560bc1a008f"
+  ]
+}

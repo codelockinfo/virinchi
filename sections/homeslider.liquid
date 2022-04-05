@@ -1,0 +1,49 @@
+<div class="homeslider"> 
+    <div class="weldone">
+    <h2 class="custom-title">{{section.settings.title}}</h2>
+  </div>
+  <div class="slider_contain">
+    <div class="slider_flex">
+    	{% for block in section.blocks %}
+      <div class="slider_drop">
+      <img src="{{block.settings.kome | img_url:'master'}}" class="slidesmg">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+
+</div>
+
+
+{% schema %}
+  {
+  "name": "homeslider",
+  "settings": [
+  {
+    "id" : "title",
+    "type" : "text",
+    "label" : "Heading"
+  }
+  ],
+  "blocks":[
+  {
+  "type" : "block",
+  "name" : "block",
+  "settings" : [
+      {
+   "id": "kome",
+   "type": "image_picker",
+    "label": "Banner Image"
+   }
+  ]
+  }
+  ],
+  "presets" : [
+  {
+    "name" : "homeslider",
+    "category" : "homeslider"
+    }
+  ]
+  }
+  {% endschema %}
