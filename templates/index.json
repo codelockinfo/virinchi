@@ -41,28 +41,11 @@
         "align_text": "center"
       }
     },
-    "164905775062c98c81": {
-      "type": "rich-text",
-      "disabled": true,
+    "16491614400615a721": {
+      "type": "furnutureslider",
       "settings": {
-        "subheading": "",
-        "title": "WELCOME TO THE NEW STANDARD IN MODULAR FURNITURE",
-        "title_size": 48,
-        "heading_h1": true,
-        "text": "",
-        "image_width": 700,
-        "button_label": "",
-        "button_link": "",
-        "button_style": "auto",
-        "text_alignment": "center",
-        "enlarge_text": true,
-        "full_width": false,
-        "no_padding_bottom": true,
-        "no_padding_top": true,
-        "align_left": true,
-        "color_scheme": "standard",
-        "color_bg": "",
-        "color_text": ""
+        "title": "CHANGING HOW INDIA BUYS KITCHEN",
+        "align_text": "left"
       }
     },
     "slideshow": {
@@ -643,6 +626,7 @@
     },
     "1649139371483fd2b8": {
       "type": "homeslider",
+      "disabled": true,
       "blocks": {
         "517a0beb-ca73-4307-8389-cf30000d346e": {
           "type": "block",
@@ -685,7 +669,7 @@
   },
   "order": [
     "164916108832c8450e",
-    "164905775062c98c81",
+    "16491614400615a721",
     "slideshow",
     "16488949989fd11ddf",
     "16488981973a09e660",
