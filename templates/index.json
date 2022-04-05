@@ -228,6 +228,7 @@
     },
     "16488981973a09e660": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16488981977fd689b5-0": {
           "type": "image",
@@ -325,6 +326,7 @@
     },
     "1649064100b496efda": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "2a69825f-7cc3-4457-968c-ff972227f5a4": {
           "type": "image",
@@ -381,6 +383,7 @@
     },
     "1649066304309c82b3": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "The Time Advantage",
