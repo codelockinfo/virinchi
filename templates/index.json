@@ -125,7 +125,8 @@
         "1648894998e4b69a90-0": {
           "type": "column",
           "settings": {
-            "title": "Step 1",
+            "kom2": "shopify:\/\/shop_images\/ICON_Easy-To-Move.webp",
+            "title": "",
             "text": "<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.<\/p>",
             "link_label": "",
             "link": ""
@@ -134,7 +135,8 @@
         "1648894998e4b69a90-1": {
           "type": "column",
           "settings": {
-            "title": "Step 2",
+            "kom2": "shopify:\/\/shop_images\/ICON_Made-To-Expand.webp",
+            "title": "",
             "text": "<p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.<\/p>",
             "link_label": "",
             "link": ""
@@ -143,7 +145,8 @@
         "1648894998e4b69a90-2": {
           "type": "column",
           "settings": {
-            "title": "Step 3",
+            "kom2": "shopify:\/\/shop_images\/ICON_Made-To-Expand.webp",
+            "title": "",
             "text": "<p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<\/p>",
             "link_label": "",
             "link": ""
@@ -152,7 +155,8 @@
         "f63bec15-0d86-43bc-bf34-5677d8fd2fb9": {
           "type": "column",
           "settings": {
-            "title": "Step 4",
+            "kom2": "shopify:\/\/shop_images\/ICON_Curated-Catalog.webp",
+            "title": "",
             "text": "<p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora<\/p>",
             "link_label": "",
             "link": ""
@@ -161,7 +165,8 @@
         "261f3896-de95-404c-ac0d-3fe1d38e2aaf": {
           "type": "column",
           "settings": {
-            "title": "Step 5",
+            "kom2": "shopify:\/\/shop_images\/ICON_Support-And-Serivce.webp",
+            "title": "",
             "text": "<p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.<\/p>",
             "link_label": "",
             "link": ""
