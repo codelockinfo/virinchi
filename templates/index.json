@@ -43,6 +43,40 @@
     },
     "16491614400615a721": {
       "type": "furnutureslider",
+      "blocks": {
+        "c2831704-1471-4072-ba64-3c58b1cda803": {
+          "type": "block",
+          "settings": {
+            "videolink": "",
+            "kome": "shopify:\/\/shop_images\/img-3-1_1920x_baab7703-24db-4b6c-964c-9333f489d68c.png",
+            "shopbtn": "shop",
+            "shopurl": ""
+          }
+        },
+        "748511f3-e030-4b26-99f0-4af783937af3": {
+          "type": "block",
+          "settings": {
+            "videolink": "",
+            "kome": "shopify:\/\/shop_images\/img-3-2_1920x_57c6e47c-70b5-42bb-958a-58fa17bfff50.jpg",
+            "shopbtn": "shop",
+            "shopurl": ""
+          }
+        },
+        "04a76234-de10-4a5f-b2f8-57858f9199cc": {
+          "type": "block",
+          "settings": {
+            "videolink": "",
+            "kome": "shopify:\/\/shop_images\/img-3-3_1920x_35c20053-0fb3-4a31-8532-46e9852201a5.jpg",
+            "shopbtn": "shop",
+            "shopurl": ""
+          }
+        }
+      },
+      "block_order": [
+        "c2831704-1471-4072-ba64-3c58b1cda803",
+        "748511f3-e030-4b26-99f0-4af783937af3",
+        "04a76234-de10-4a5f-b2f8-57858f9199cc"
+      ],
       "settings": {
         "title": "CHANGING HOW INDIA BUYS KITCHEN",
         "align_text": "left"
