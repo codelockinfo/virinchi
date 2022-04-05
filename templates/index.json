@@ -404,6 +404,7 @@
     },
     "1649065805e325aec1": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "THE PRICING ADVANTAGE",
