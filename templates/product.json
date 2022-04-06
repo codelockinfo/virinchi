@@ -6,8 +6,8 @@
         "vendor_and_type": {
           "type": "vendor_and_type",
           "settings": {
-            "show_vendor": true,
-            "show_type": false
+            "show_vendor": false,
+            "show_type": true
           }
         },
         "title": {
