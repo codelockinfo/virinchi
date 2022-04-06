@@ -37,7 +37,7 @@
     "collection_hover_effect": "info",
     "collection_show_product_count": true,
     "swatch_enabled": true,
-    "swatch_use_prod_images": true,
+    "swatch_use_prod_images": false,
     "swatch_prod_images_shape": "square",
     "type_base_font": "neuzeit_s_n4",
     "type_heading_font": "futura_n6",
