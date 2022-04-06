@@ -67,7 +67,7 @@
     </div>
   {% endif %}
 
-  <div class="product-area__media {% if media_columns_to_show != 1 %}multi-column{% endif %}"
+  <div class="cls product-area__media {% if media_columns_to_show != 1 %}multi-column{% endif %}"
        data-cc-animate data-cc-animate-duration="1s">
 
     {%- if section.settings.show_thumbnails and product.media.size > 1 and section.settings.media_style == "one-column" -%}
@@ -120,7 +120,7 @@
         <div class="theme-images swiper-wrapper">
           {% if product != blank %}
             {% for media in product.media %}
-              <div class="theme-img theme-img-{{ forloop.index }} swiper-slide {% if featured_media == media %}current-img{% endif %}"
+              <div class="theme-img swiper-container theme-img-{{ forloop.index }} swiper-slide {% if featured_media == media %}current-img{% endif %}"
                       {% if media.media_type == "image" %}
                         data-full-size="{{ media.preview_image | img_url: 'master' }}"
                       {% endif %}
@@ -303,7 +303,7 @@
                           {% if vendor_empty == false %}<span class="cc-bullet">&bull;</span>{% endif %}
 
                           <span class="type">
-                                  <a data-cc-animate-click href="{{ type_url }}">
+                                <span class="shape-text">Shape:</span>  <a data-cc-animate-click href="{{ type_url }}">
                                     {{ product.type }}
                                   </a>
                                 </span>
@@ -330,10 +330,9 @@
                 {%- when 'price' -%}
                   <div class="price-area product-detail__gap-sm" {{ block.shopify_attributes }}>
                     {% if current_variant.compare_at_price > current_variant.price %}
-                      <span class="was-price theme-money">{%- render "price", price: current_variant.compare_at_price -%}</span>
+                    <span class="was-price theme-money">{%- render "price", price: current_variant.compare_at_price -%}</span>
                     {% endif %}
                     <div class="price theme-money">{%- render "price", price: current_variant.price -%}</div>
-
                     {% render 'unit-price', variant: current_variant %}
                   </div>
 
@@ -427,10 +426,12 @@
                                 </div>
                               {%- endif -%}
                             {% endcapture %}
+                            <div class="size-align">
                             <label {% if option.name == 'default' %}class="hidden"{% endif %} for="option-{{ option.name | handle }}-{{ product.id }}">
                               {{- option.name -}}{%- if show_swatches -%}: <span class="cc-swatches__label">{{ option.selected_value }}</span>{%- endif -%}
                               {%- if block.settings.variant_style == 'underlined' and show_swatches == false -%}{{ size_chart_html }}{%- endif -%}
                             </label>
+                          </div>
                             <select id="option-{{ option.name | handle }}-{{ product.id }}"
                                     {% if block.settings.variant_style == 'underlined' or show_swatches %}class="noreplace" data-make-box{% endif %}
                               {% if show_swatches %}data-colour-swatch="true"{% endif %}>
@@ -479,7 +480,10 @@
                               {%- endcapture -%}
 
                               <label {% if show_swatches %}for="option-{{ option | handle }}-{{ product.id }}"{% endif %}>
-                                {{- option -}}{%- if show_swatches -%}: <span class="cc-swatches__label">{{ product.variants.first[opt_idx] }}</span>{%- endif -%}
+                                {{- option -}}{%- if show_swatches -%}Option: 
+                                <span class="cc-swatches__label">{{ product.variants.first[opt_idx] }}
+                                </span>
+                                {%- endif -%}
                                 {%- unless show_swatches -%}{{- size_chart_html -}}:{%- endunless -%}
                               </label>
 
@@ -2833,3 +2837,53 @@
     ]
   }
 {% endschema %}
+<style>
+  svg{
+    display: none !important;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    background-color: rgb(0 0 0 / 0%) !important;    
+  }
+  .selector-wrapper.has-clickyboxes {
+    display: flex;
+    place-content: space-between;
+}
+.shape-text{
+color : #111111  !important;  
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+
+  var mySwiper = new Swiper(".swiper-container", {
+    loop: true,
+    autoHeight: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        }
+    }
+});
+
+
+});
+
+</script>
