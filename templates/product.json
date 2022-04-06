@@ -64,13 +64,6 @@
             "tab_4_title": "",
             "tab_4_content": ""
           }
-        },
-        "24ea7022-922a-42e3-a8ed-d543b43ca027": {
-          "type": "text",
-          "settings": {
-            "text": "Text block",
-            "text_style": "body"
-          }
         }
       },
       "block_order": [
@@ -80,8 +73,7 @@
         "rating",
         "variant_picker",
         "buy_buttons",
-        "tabs",
-        "24ea7022-922a-42e3-a8ed-d543b43ca027"
+        "tabs"
       ],
       "settings": {
         "media_style": "one-column",
