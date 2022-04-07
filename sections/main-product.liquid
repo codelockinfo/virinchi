@@ -328,6 +328,8 @@
                   {% endif %}
 
                 {%- when 'price' -%}
+                      
+                      
                   <div class="price-area product-detail__gap-sm" {{ block.shopify_attributes }}>
                     {% if current_variant.compare_at_price > current_variant.price %}
                     <span class="was-price theme-money">{%- render "price", price: current_variant.compare_at_price -%}</span>
