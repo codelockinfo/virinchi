@@ -302,11 +302,20 @@
                         {% if product.type != blank %}
                           {% if vendor_empty == false %}<span class="cc-bullet">&bull;</span>{% endif %}
 
-                          <span class="type">
-                                <span class="shape-text">Shape:</span>  <a data-cc-animate-click href="{{ type_url }}">
+                      	 <table>
+                <tbody>
+                    <tr>
+                    <th><span class="shape-text">Shape:</span> </th>     
+                      <td> <a data-cc-animate-click href="{{ type_url }}">
                                     {{ product.type }}
-                                  </a>
-                                </span>
+                                  </a></td>
+                    </tr>
+                </tbody>
+            	</table>
+                      	
+                          
+                                 
+                             
                         {% endif %}
                       {% endif %}
                     </div>
