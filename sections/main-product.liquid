@@ -453,7 +453,8 @@
                 				</tbody>
             				</table>
                             
-                            
+                            {% if option.name == "size"%}
+                            	
                         {% if product.type != blank %}
                           {% if vendor_empty == false %}<span class="cc-bullet">&bull;</span>{% endif %}
 
@@ -470,6 +471,7 @@
                 			</tbody>
             			</table>
                         {% endif %}
+                            {% endif %}
                         
                        
                             {% if block.settings.variant_style == 'dropdown' or show_swatches %}{{ size_chart_html }}{% endif %}
