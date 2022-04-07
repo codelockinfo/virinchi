@@ -438,7 +438,7 @@
                              <table>
                					 <tbody>
                     				<tr>
-                    					<th>    
+                    					<th class="pr-th-cls">    
                                           <div class="size-align">
                                             <label {% if option.name == 'default' %}class="hidden"{% endif %} for="option-{{ option.name | handle }}-{{ product.id }}">
                               				{{- option.name -}}{%- if show_swatches -%}: 
@@ -449,13 +449,13 @@
                           				</div>
                                       </th>     
                       					<td>
-                                           <select id="option-{{ option.name | handle }}-{{ product.id }}"
-                                    {% if block.settings.variant_style == 'underlined' or show_swatches %}class="noreplace" data-make-box{% endif %}
-                              {% if show_swatches %}data-colour-swatch="true"{% endif %}>
-                              {% for value in option.values %}
-                                <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
-                              {% endfor %}
-                            </select>
+                                            <select id="option-{{ option.name | handle }}-{{ product.id }}"
+                                                {% if block.settings.variant_style == 'underlined' or show_swatches %}class="noreplace" data-make-box{% endif %}
+                              					{% if show_swatches %}data-colour-swatch="true"{% endif %}>
+                              					{% for value in option.values %}
+                                				<option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                              					{% endfor %}
+                           				 	</select>
                                       	</td>
                     				</tr>
                 				</tbody>
