@@ -336,7 +336,7 @@
             	</table>
 
                 {%- when 'rating' -%}
-                  <div class="cc-rating-container product-detail__gap-sm">
+                  <div class="cc-rating-container product-detail__gap-sm" style="display:none;">
                     {% render 'rating', rating_value: product.metafields.reviews.rating.value %}
 
                     {% if product.metafields.reviews.rating_count != blank and product.metafields.reviews.rating_count > 0 %}
