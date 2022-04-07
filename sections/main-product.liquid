@@ -448,20 +448,22 @@
                             				</label>
                           				</div>
                                       </th>     
-                      					<td> </td>
-                    				</tr>
-                				</tbody>
-            				</table>
-                            
-                            
-                        
-                            <select id="option-{{ option.name | handle }}-{{ product.id }}"
+                      					<td>
+                                           <select id="option-{{ option.name | handle }}-{{ product.id }}"
                                     {% if block.settings.variant_style == 'underlined' or show_swatches %}class="noreplace" data-make-box{% endif %}
                               {% if show_swatches %}data-colour-swatch="true"{% endif %}>
                               {% for value in option.values %}
                                 <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
                               {% endfor %}
                             </select>
+                                      	</td>
+                    				</tr>
+                				</tbody>
+            				</table>
+                            
+                            
+                        
+                       
                             {% if block.settings.variant_style == 'dropdown' or show_swatches %}{{ size_chart_html }}{% endif %}
                           </div>
                         {% endfor %}
