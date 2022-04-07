@@ -454,6 +454,22 @@
             				</table>
                             
                             
+                        {% if product.type != blank %}
+                          {% if vendor_empty == false %}<span class="cc-bullet">&bull;</span>{% endif %}
+
+                      	 <table>
+                			<tbody>
+                    		<tr>
+                    			<th class="pr-th-cls"><span class="shape-text">Shape:</span> </th>     
+                      			<td> 
+                                  <a data-cc-animate-click href="{{ type_url }}">
+                                    {{ product.type }}
+                                  </a>
+                                </td>
+                    		</tr>
+                			</tbody>
+            			</table>
+                        {% endif %}
                         
                        
                             {% if block.settings.variant_style == 'dropdown' or show_swatches %}{{ size_chart_html }}{% endif %}
