@@ -269,7 +269,7 @@
                   -%}
 
                   {% if type_empty == false or vendor_empty == false %}
-                    <div class="vendor product-detail__gap-sm" {{ block.shopify_attributes }}>
+                    <div class="vendor product-detail__gap-sm" {{ block.shopify_attributes }} style="display:none;">
                       {% if block.settings.show_vendor %}
                         {% comment %}
                           Do we have a collection that has the same name as our product vendor name?
