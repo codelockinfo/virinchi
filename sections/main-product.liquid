@@ -433,14 +433,28 @@
                                 </div>
                               {%- endif -%}
                             {% endcapture %}
-                            <div class="size-align">
-                            <label {% if option.name == 'default' %}class="hidden"{% endif %} for="option-{{ option.name | handle }}-{{ product.id }}">
-                              {{- option.name -}}{%- if show_swatches -%}: 
-                              <!-- <span class="cc-swatches__label">{{ option.selected_value }}</span> -->
-                              {%- endif -%}
-                              {%- if block.settings.variant_style == 'underlined' and show_swatches == false -%}{{ size_chart_html }}{%- endif -%}
-                            </label>
-                          </div>
+                            
+                            
+                             <table>
+               					 <tbody>
+                    				<tr>
+                    					<th>    
+                                          <div class="size-align">
+                                            <label {% if option.name == 'default' %}class="hidden"{% endif %} for="option-{{ option.name | handle }}-{{ product.id }}">
+                              				{{- option.name -}}{%- if show_swatches -%}: 
+                              				<!-- <span class="cc-swatches__label">{{ option.selected_value }}</span> -->
+                              				{%- endif -%}
+                              				{%- if block.settings.variant_style == 'underlined' and show_swatches == false -%}{{ size_chart_html }}{%- endif -%}
+                            				</label>
+                          				</div>
+                                      </th>     
+                      					<td> </td>
+                    				</tr>
+                				</tbody>
+            				</table>
+                            
+                            
+                        
                             <select id="option-{{ option.name | handle }}-{{ product.id }}"
                                     {% if block.settings.variant_style == 'underlined' or show_swatches %}class="noreplace" data-make-box{% endif %}
                               {% if show_swatches %}data-colour-swatch="true"{% endif %}>
