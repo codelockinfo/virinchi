@@ -937,7 +937,44 @@
     </div>
   </div>
 </div>
+<div class="product-detail__tab-container product-detail__gap-lg" {{ block.shopify_attributes }}>
+  {%- liquid
+    assign product_description_title = 'products.product.description' | t
 
+    if block.settings.show_product_description == false
+      assign tab1_title = block.settings.tab_2_title | default: pages[block.settings.tab_2_page].title
+      assign tab1_content = block.settings.tab_2_content | default: pages[block.settings.tab_2_page].content
+      assign tab2_title = block.settings.tab_3_title | default: pages[block.settings.tab_3_page].title
+      assign tab2_content = block.settings.tab_3_content | default: pages[block.settings.tab_3_page].content
+      assign tab3_title = block.settings.tab_4_title | default: pages[block.settings.tab_4_page].title
+      assign tab3_content = block.settings.tab_4_content | default: pages[block.settings.tab_4_page].content
+    else
+      assign tab1_title = product_description_title
+      assign tab1_content = product.description
+      assign tab2_title = block.settings.tab_2_title | default: pages[block.settings.tab_2_page].title
+      assign tab2_content = block.settings.tab_2_content | default: pages[block.settings.tab_2_page].content
+      assign tab3_title = block.settings.tab_3_title | default: pages[block.settings.tab_3_page].title
+      assign tab3_content = block.settings.tab_3_content | default: pages[block.settings.tab_3_page].content
+      assign tab4_title = block.settings.tab_4_title | default: pages[block.settings.tab_4_page].title
+      assign tab4_content = block.settings.tab_4_content | default: pages[block.settings.tab_4_page].content
+    endif
+  -%}
+
+  {%
+    render "tabs",
+    product: product,
+    display_type: "tab",
+    show_reviews: block.settings.show_product_reviews,
+    tab1_title: tab1_title,
+    tab1_content: tab1_content,
+    tab2_title: tab2_title,
+    tab2_content: tab2_content,
+    tab3_title: tab3_title,
+    tab3_content: tab3_content,
+    tab4_title: tab4_title,
+    tab4_content: tab4_content
+  %}
+</div>
 <script type="application/json" id="cc-product-json-{{ product.id }}">
   {{ product | json }}
 </script>
