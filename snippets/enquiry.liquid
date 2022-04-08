@@ -1,0 +1,168 @@
+<div class="">
+<a class="open-button" popup-open="popup-1" > {{btn}}</a>
+         
+        <div class="popup" popup-name="popup-1">
+            <div class="popup-content">
+            <h2 class="head-cls">{{ heading }}</h2>
+            <input type="number" class="popupclsint" placeholder="Number">
+            <h2 class="collection_text"> {{ section.settings.collectiontext }} </h2>
+        <div class="block-section">
+        {% for block in section.blocks %}
+        {%- assign collection = collections[block.settings.collection] -%}
+        <div class="collection-name">
+        <h3 class="cls-name-col"> {{ collection.title }} </h3>
+        </div>
+        {% endfor %}
+        </div>
+        <div class="btn_sub_cls">
+        <button class="btn-cls btn"> <a href="#"> {{ btn }} </a> </button>
+        </div>
+        <a class="close-button" popup-close="popup-1" >x</a>
+            </div>
+        </div> 
+        </div>
+
+        <style>
+        button.btn-cls{
+            background: #18A0FB;
+    color: #fff;
+    padding: 1% 80px;
+    border-radius: 6px;
+        }
+        .btn_sub_cls{
+            text-align: center;
+        }
+        h2.head-cls{
+font-family: Montserrat;
+font-size: 56px;
+font-weight: 400;
+line-height: 80px;
+letter-spacing: -0.015em;
+text-align: left;
+    margin: 3% 0;
+        }
+        h2.collection_text{
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: -0.015em;
+text-align: left;
+    margin: 3% 0;
+
+        }
+        h3.cls-name-col{
+            font-family: Montserrat;
+font-size: 15px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: -0.015em;
+text-align: center;
+
+        }
+        .collection-name {
+    width: 19%;
+    border: 1px solid #18A0FB;
+    border-radius: 6px;
+    padding: 1%;
+    margin: 1%;
+}
+.block-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+        p {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #484848;
+}
+ 
+.open-button{
+    color:#FFF;
+    background:#0066CC;
+    padding:10px;
+    text-decoration:none;
+    border:1px solid #0157ad;
+    border-radius:3px;
+}
+ 
+.open-button:hover{
+    background:#01478e;
+}
+ 
+.popup {
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+    width:100%;
+    height:100%;
+    display:none;
+}
+ 
+.popup-content {
+    top: 20%;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,1);
+    border-radius: 3px;
+    background: #fff;
+    position: relative;
+}
+ 
+.close-button {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.8);
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    text-decoration:none;
+}
+ 
+.close-button:hover {
+    background: rgba(0,0,0,1);
+}
+ 
+@media screen and (max-width: 720px) {
+.popup-content {
+    width:90%;
+    } 
+}
+
+</style>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+$(function() {
+    $('[popup-open]').on('click', function() {
+        var popup_name = $(this).attr('popup-open');
+ $('[popup-name="' + popup_name + '"]').fadeIn(300);
+    });
+ 
+    $('[popup-close]').on('click', function() {
+ var popup_name = $(this).attr('popup-close');
+ $('[popup-name="' + popup_name + '"]').fadeOut(300);
+    });
+ 
+    $('.popup').on('click', function() {
+ var popup_name = $(this).find('[popup-close]').attr('popup-close');
+ $('[popup-name="' + popup_name + '"]').fadeOut(300);
+    }).children().click(function() {
+ return false;
+    });
+ 
+});
+
+</script>

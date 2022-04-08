@@ -1,0 +1,47 @@
+{% assign heading = section.settings.heading %}
+{% assign collectiontext = section.settings.collectiontext %}
+{% assign btn = section.settings.btn %}
+{% assign collection = collection %}
+
+{% render 'enquiry',heading:heading,collectiontext:collectiontext,btn:btn,collection:collection %}
+
+{% schema %}
+{
+"name": "Enquiry",
+"settings": [
+    {
+        "id" : "heading",
+        "type" : "text",
+        "label" : "Heading"
+    },
+    {
+        "id" : "collectiontext",
+        "type" : "text",
+        "label" : "Collection Heading"
+    },
+    {
+        "id" : "btn",
+        "type" : "text",
+        "label" : "Button"
+    }
+],
+"blocks" : [
+    {
+        "name" : "block",
+        "type" : "block",
+        "settings" : [
+            {
+                "id" : "collection",
+                "type" : "collection",
+                "label" : "Collection"
+            }
+        ]
+    }
+],
+"presets" : [
+{
+    "name" : "Enquiry"
+}
+]
+}
+{% endschema %}
