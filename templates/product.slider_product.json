@@ -1,109 +1,144 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-product-cls",
-        "blocks": {
-          "title": {
-            "type": "title",
-            "disabled": true,
-            "settings": {
-              "heading_h1": true
-            }
-          },
-          "price": {
-            "type": "price",
-            "settings": {
-            }
-          },
-          "vendor_and_type": {
-            "type": "vendor_and_type",
-            "settings": {
-              "show_vendor": false,
-              "show_type": true
-            }
-          },
-          "rating": {
-            "type": "rating",
-            "settings": {
-            }
-          },
-          "variant_picker": {
-            "type": "variant_picker",
-            "settings": {
-              "variant_style": "underlined",
-              "show_realtime_availability": true,
-              "show_size_chart": false,
-              "size_chart_variant": "Size",
-              "size_chart_page": ""
-            }
-          },
-          "buy_buttons": {
-            "type": "buy_buttons",
-            "disabled": true,
-            "settings": {
-              "show_tax_and_shipping": false,
-              "show_quantity_selector": true,
-              "enable_payment_button": true,
-              "show_pickup_availability": true,
-              "cart_type": "add_in_modal",
-              "enable_mobile_sticky_cart": false
-            }
-          },
-          "tabs": {
-            "type": "tabs",
-            "settings": {
-              "show_product_description": true,
-              "show_product_reviews": true,
-              "tab_2_page": "",
-              "tab_2_title": "",
-              "tab_2_content": "",
-              "tab_3_page": "",
-              "tab_3_title": "",
-              "tab_3_content": "",
-              "tab_4_page": "",
-              "tab_4_title": "",
-              "tab_4_content": ""
-            }
+  "sections": {
+    "main": {
+      "type": "main-product-cls",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "heading_h1": true
           }
         },
-        "block_order": [
-          "title",
-          "price",
-          "vendor_and_type",
-          "rating",
-          "variant_picker",
-          "buy_buttons",
-          "tabs"
-        ],
-        "settings": {
-          "media_style": "one-column",
-          "sticky_behaviour": "none",
-          "full_width": false,
-          "show_backorder_text": true,
-          "slide_nav_style": "arrows",
-          "media_crop": "center",
-          "enable_zoom": true,
-          "zoom_cursor": "standard",
-          "show_thumbnails": false,
-          "enable_video_looping": false,
-          "scroll_to_variant_media": false,
-          "variant_media_grouping": false,
-          "variant_media_grouping_option": "Color,Colour,Couleur,Farbe"
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "vendor_and_type": {
+          "type": "vendor_and_type",
+          "settings": {
+            "show_vendor": false,
+            "show_type": true
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true,
+            "show_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_pickup_availability": true,
+            "cart_type": "add_in_modal",
+            "enable_mobile_sticky_cart": false
+          }
+        },
+        "tabs": {
+          "type": "tabs",
+          "settings": {
+            "show_product_description": true,
+            "show_product_reviews": true,
+            "tab_2_page": "",
+            "tab_2_title": "",
+            "tab_2_content": "",
+            "tab_3_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "",
+            "tab_4_page": "",
+            "tab_4_title": "",
+            "tab_4_content": ""
+          }
         }
       },
-      "product-recommendations": {
-        "type": "product-recommendations",
-        "settings": {
-          "show_product_recommendations": true,
-          "title": "You may also like",
-          "hide_swatches": false,
-          "show_vendor": false,
-          "grid": 3
-        }
+      "block_order": [
+        "title",
+        "price",
+        "vendor_and_type",
+        "rating",
+        "variant_picker",
+        "buy_buttons",
+        "tabs"
+      ],
+      "settings": {
+        "media_style": "one-column",
+        "sticky_behaviour": "none",
+        "full_width": false,
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "standard",
+        "show_thumbnails": false,
+        "enable_video_looping": false,
+        "scroll_to_variant_media": false,
+        "variant_media_grouping": false,
+        "variant_media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
-    "order": [
-      "main",
-      "product-recommendations"
-    ]
-  }
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "hide_swatches": false,
+        "show_vendor": false,
+        "grid": 3
+      }
+    },
+    "1649424520fbd48ca4": {
+      "type": "pdp-tab-slider",
+      "blocks": {
+        "a73e9e30-62d4-4b90-b900-03ed1cde60dd": {
+          "type": "kitchen",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            "image": "shopify:\/\/shop_images\/blogimg2.jpg"
+          }
+        },
+        "fc28831e-ed65-4b7d-9d32-1219a42f98d3": {
+          "type": "kitchen",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            "image": "shopify:\/\/shop_images\/easter-home-decor-ideas.jpg"
+          }
+        },
+        "883bd2cb-620e-4922-9064-1a13b5d0d1b0": {
+          "type": "wardrobes",
+          "settings": {
+            "text2": ""
+          }
+        }
+      },
+      "block_order": [
+        "a73e9e30-62d4-4b90-b900-03ed1cde60dd",
+        "fc28831e-ed65-4b7d-9d32-1219a42f98d3",
+        "883bd2cb-620e-4922-9064-1a13b5d0d1b0"
+      ],
+      "settings": {
+        "title1": "KITCHEN",
+        "title2": "WARDROBES"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "1649424520fbd48ca4"
+  ]
+}

@@ -1,10 +1,12 @@
 {
-    "sections": {
-      "main": {
-        "type": "image-with-text"
+  "sections": {
+    "main": {
+      "type": "image-with-text",
+      "settings": {
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
