@@ -92,16 +92,6 @@
         "variant_media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "show_product_recommendations": true,
-        "title": "You may also like",
-        "hide_swatches": false,
-        "show_vendor": false,
-        "grid": 3
-      }
-    },
     "1649424520fbd48ca4": {
       "type": "pdp-tab-slider",
       "blocks": {
@@ -144,11 +134,21 @@
         "title1": "KITCHEN",
         "title2": "WARDROBES"
       }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "hide_swatches": false,
+        "show_vendor": false,
+        "grid": 3
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
-    "1649424520fbd48ca4"
+    "1649424520fbd48ca4",
+    "product-recommendations"
   ]
 }
