@@ -121,14 +121,23 @@
         "883bd2cb-620e-4922-9064-1a13b5d0d1b0": {
           "type": "wardrobes",
           "settings": {
-            "text2": ""
+            "text2": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            "image2": "shopify:\/\/shop_images\/easter-home-decor-ideas.jpg"
+          }
+        },
+        "3d592e4d-6d48-442c-aae0-8993b0eebcb7": {
+          "type": "wardrobes",
+          "settings": {
+            "text2": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+            "image2": "shopify:\/\/shop_images\/matte-black-wall-paint-for-your-home.jpg"
           }
         }
       },
       "block_order": [
         "a73e9e30-62d4-4b90-b900-03ed1cde60dd",
         "fc28831e-ed65-4b7d-9d32-1219a42f98d3",
-        "883bd2cb-620e-4922-9064-1a13b5d0d1b0"
+        "883bd2cb-620e-4922-9064-1a13b5d0d1b0",
+        "3d592e4d-6d48-442c-aae0-8993b0eebcb7"
       ],
       "settings": {
         "title1": "KITCHEN",
