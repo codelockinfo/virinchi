@@ -319,22 +319,7 @@ endfor
                   <{{ heading_tag }} class="product-area__details__title product-detail__gap-sm h2" {{ block.shopify_attributes }}>{{ product.title }}</{{ heading_tag }}>
                 {% endif %}
 
-              {%- when 'price' -%}
-              <table>
-              <tbody>
-                  <tr>
-                  <th class="pr-th-cls">Price</th>     
-                    <td> <div class="price-area product-detail__gap-sm" {{ block.shopify_attributes }}>
-                  {% if current_variant.compare_at_price > current_variant.price %}
-                  <span class="was-price theme-money">{%- render "price", price: current_variant.compare_at_price -%}</span>
-                  {% endif %}
-                  <div class="price theme-money">{%- render "price", price: current_variant.price -%}</div>
-                  {% render 'unit-price', variant: current_variant %}
-                </div></td>
-                  </tr>
-              </tbody>
-            </table>
-
+              
               {%- when 'rating' -%}
                 <div class="cc-rating-container product-detail__gap-sm" style="display:none;">
                   {% render 'rating', rating_value: product.metafields.reviews.rating.value %}
