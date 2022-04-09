@@ -911,10 +911,20 @@ endfor
 
               {%- when 'price' -%}
                 <div class="price-cls">
-                <div class="price-area product-detail__gap-sm" {{ block.shopify_attributes }}>
-                  {% comment %} <span class="was-price">{%- render "price", price: 2999 -%}</span> {% endcomment %}
-                  <div class="price">{%- render "price", price: 1999 -%}</div>
-                </div>
+                    <table>
+                    <tbody>
+                        <tr>
+                        <th class="pr-th-cls">Price</th>     
+                          <td> <div class="price-area product-detail__gap-sm" {{ block.shopify_attributes }}>
+                        {% if current_variant.compare_at_price > current_variant.price %}
+                        <span class="was-price theme-money">{%- render "price", price: current_variant.compare_at_price -%}</span>
+                        {% endif %}
+                        <div class="price theme-money">{%- render "price", price: current_variant.price -%}</div>
+                        {% render 'unit-price', variant: current_variant %}
+                      </div></td>
+                        </tr>
+                    </tbody>
+                  </table>
               <div class="extra-price">
                 <h2 class="del-cls">45 days delivery</h2>
                 {% render 'enquiry'%}
@@ -2904,6 +2914,12 @@ endfor
 }
 {% endschema %}
 <style>
+  .price-cls table{
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3%;
+  }
   .product-detail__tab-container{
   width: 1100px;
   margin: auto;
@@ -3017,8 +3033,8 @@ h2.del-cls{
   margin: 5% 0;
 }
 .price-cls .price-area{
-  border-bottom: 1px solid #000;
-  padding-bottom: 3%;
+  {% comment %} border-bottom: 1px solid #000; {% endcomment %}
+  {% comment %} padding-bottom: 3%; {% endcomment %}
 }
 @media(max-width:768px){
   .main-cls-flx{
