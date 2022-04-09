@@ -44,6 +44,79 @@
         </div>
     </div>
 </div>
+
+<div class="mobile-table">
+    <div class="tab-cls">
+        <table>
+            <tr>
+                <td class="heading-tab">Id</td>
+                <td>1234</td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Date</td>
+                <td>21-Feb-2021</td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Order Items</td>
+                <td>L-Shape Navy Blue & White Moduler Kichen </td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Delivery Date</td>
+                <td>Not Available</td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Amount</td>
+                <td>Rs 1,50,000.00</td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Paymrnt Status</td>
+                <td>Not Received</td>
+            </tr>
+
+        </table>
+
+        <table>
+            <tr>
+                <td class="heading-tab">Id</td>
+                <td>5678</td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Date</td>
+                <td>21-Feb-2021</td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Order Items</td>
+                <td>Sliding door Navy Blue & White Master bed room wardrobe </td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Delivery Date</td>
+                <td>21-Apr-2022</td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Amount</td>
+                <td>Rs 2,50,000.00</td>
+            </tr>
+            <tr>
+                <td class="heading-tab">Paymrnt Status</td>
+                <td>Received</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 <div class="progress-bar">
@@ -104,6 +177,9 @@
 .mobile-order{
 display: none;
 }
+.mobile-table{
+display:none;
+}
 .Mian-order-cls{
 max-width:1400px;
 width:100%;
@@ -112,7 +188,30 @@ padding:3%;
 }
 .container-cls .row{
 margin: 0;}
+/* MOBILE TABLE CSS START */
+.tab-cls table{
+    margin: 5% 0;
+    width: 100%;
+}
+tr td.heading-tab{
+    border-right: 1px solid;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.015em;
+    text-align: left;
+width:40%;
+}
+.tab-cls table tr{
+border: 1px solid;
+    }
+.tab-cls tr td{
+    padding-left: 1%;
+padding-bottom: 2%;
+}
 
+/* MOBILE CSS END TABLE */
 /* CSS START PROGRESSBAR */
 .cls-top{
 margin-top:-8%;
@@ -318,5 +417,11 @@ text-align: center;
     .progress-bar{
     display: none;
 }
+.container-cls{
+display:none;
+}
+.mobile-table{
+    display:block;
+    }
 }
 </style>
