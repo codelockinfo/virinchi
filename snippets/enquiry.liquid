@@ -1,10 +1,10 @@
-<div class="">
-<a class="open-button" popup-open="popup-1" > {{btn}}</a>
+<div class="main-popup-enq">
+<a class="open-button" popup-open="popup-1" > BOOK A CONSULTATION </a>
          
         <div class="popup" popup-name="popup-1">
             <div class="popup-content">
             <h2 class="head-cls">{{ heading }}</h2>
-            <input type="number" class="popupclsint" placeholder="Number">
+            <input type="number" class="popupclsint" placeholder="Number" min="10" max="10">
             <h2 class="collection_text"> {{ section.settings.collectiontext }} </h2>
         <div class="block-section">
         {% for block in section.blocks %}
@@ -14,15 +14,24 @@
         </div>
         {% endfor %}
         </div>
+        <input class="abs-cls" type="checkbox" id="vehicle1" checked="checked">
+  <label class="cls-lab"> Send me updates on Whatsapp</label>
         <div class="btn_sub_cls">
         <button class="btn-cls btn"> <a href="#"> {{ btn }} </a> </button>
         </div>
+        
         <a class="close-button" popup-close="popup-1" >x</a>
             </div>
         </div> 
         </div>
 
         <style>
+            label.cls-lab{
+            margin-left: 2%;
+        }
+        input.abs-cls{
+        position: absolute;
+    }
         button.btn-cls{
             background: #18A0FB;
     color: #fff;
@@ -34,9 +43,9 @@
         }
         h2.head-cls{
 font-family: Montserrat;
-font-size: 56px;
+font-size: 35px;
 font-weight: 400;
-line-height: 80px;
+line-height: 40px;
 letter-spacing: -0.015em;
 text-align: left;
     margin: 3% 0;
@@ -61,7 +70,7 @@ text-align: center;
 
         }
         .collection-name {
-    width: 19%;
+    width: 23%;
     border: 1px solid #18A0FB;
     border-radius: 6px;
     padding: 1%;
@@ -78,8 +87,8 @@ text-align: center;
     color: #484848;
 }
  
-.open-button{
-    color:#FFF;
+.main-popup-enq .open-button{
+    color:#FFF !important;
     background:#0066CC;
     padding:10px;
     text-decoration:none;
@@ -114,7 +123,7 @@ text-align: center;
     position: relative;
 }
  
-.close-button {
+.popup-content .close-button {
     cursor: pointer;
     width: 25px;
     height: 25px;
@@ -125,19 +134,35 @@ text-align: center;
     background: rgba(0,0,0,0.8);
     font-size: 20px;
     text-align: center;
-    color: #fff;
+    color: #fff !important;
     text-decoration:none;
 }
  
 .close-button:hover {
     background: rgba(0,0,0,1);
 }
- 
+@media screen and (max-width: 1000px) {
+    .collection-name {
+        width: 31%;
+    }
+    }
+@media screen and (max-width: 768px) {
+    .collection-name {
+        width: 48%;
+    }
+    }
+    @media screen and (max-width: 410px) {
+        .collection-name {
+            width: 99%;
+        }
+        }
+
 @media screen and (max-width: 720px) {
 .popup-content {
     width:90%;
     } 
 }
+
 
 </style>
 

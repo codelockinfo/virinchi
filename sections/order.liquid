@@ -1,0 +1,322 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<div class="Mian-order-cls">
+<div class="first-sec-cls">
+<h2 class="order-hed">Order</h2>
+<div class="container-cls">
+    <div class="row">
+        <div class="col-xs-12">
+            <table summary="This table shows how to create responsive tables using Datatables' extended functionality" class="table table-bordered table-hover dt-responsive">
+                <thead>
+                    <tr>
+                    <th>Id</th>
+                    <th>Date</th>
+                    <th>Order Items</th>
+                    <th>Delivery Date</th>
+                    <th>Amount</th>
+                    <th>Payment Status </th>
+                    <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1234</td>
+                    <td>21-Feb-2021</td>
+                    <td>L-Shape Navy Blue & White Moduler Kichen </td>
+                    <td>Not Available</td>
+                    <td>Rs 1,50,000.00</td>
+                    <td>Not Received</td>
+                    <td><button class="btn but-clss">Pay Now </button> </td>
+                    </tr>
+                    <tr>
+                    <td>3456</td>
+                    <td>21-Feb-2021</td>
+                    <td>Sliding door Navy Blue & White Master bed room wardrobe</td>
+                    <td>21-Apr-2022</td>
+                    <td>Rs 2,50,000.00</td>
+                    <td>Received</td>
+                    <td><button class="btn but-clss">Track </button> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="progress-bar">
+    <div class="progress-step">
+        <div class="cls-top">Order</div>
+        <div class="step-count cls-1"></div>
+        <div class="step-description">DONE</div>
+        <div class="step-description">Date - 21/03/21</div>
+    </div>
+    <div class="progress-step is-active">
+        <div class="cls-top">Order in production</div>
+        <div class="step-count cls-2"></div>
+        <div class="step-description">In-progress</div>
+    </div>
+    <div class="progress-step">
+        <div class="cls-top">Ready for Delivery</div>
+        <div class="step-count cls-3"></div>
+        <div class="step-description">Not yet  started</div>
+    </div>
+    <div class="progress-step">
+        <div class="cls-top">Delevered</div>
+        <div class="step-count cls-4"></div>
+        <div class="step-description">Not yet  started</div>
+        <div class="step-description">Estimated</div>
+        <div class="step-description">date - 24/4/21</div>
+    </div>
+    <div class="progress-step">
+        <div class="cls-top">Installation in Progress</div>
+        <div class="step-count cls-5"></div>
+        <div class="step-description">Not yet  started</div>
+    </div>
+    <div class="progress-step">
+        <div class="cls-top">Order Completed</div>
+        <div class="step-count cls-6"></div>
+        <div class="step-description">Not yet  started</div>
+        <div class="step-description">Estimated date - 30/4/21</div>
+    </div>
+</div>
+<div class="mobile-order">
+<ul id="progress">
+    <li><div class="node green"></div><p>Order</p></li>
+    <li><div class="divider grey"></div></li>
+    <li><div class="node grey"></div><p>Order in production</p></li>
+    <li><div class="divider grey"></div></li>
+    <li><div class="node grey"></div><p>Ready for Delivery</p></li>
+    <li><div class="divider grey"></div></li>
+    <li><div class="node grey"></div><p>Delevered</p></li>
+    <li><div class="divider grey"></div></li>
+    <li><div class="node grey"></div><p>Installation in Progress</p></li>
+    <li><div class="divider grey"></div></li>
+    <li><div class="node grey"></div><p>Order Completed</p></li>
+</ul>
+</div>
+</div>
+
+
+<style>
+.mobile-order{
+display: none;
+}
+.Mian-order-cls{
+max-width:1400px;
+width:100%;
+margin: auto;
+padding:3%;
+}
+.container-cls .row{
+margin: 0;}
+
+/* CSS START PROGRESSBAR */
+.cls-top{
+margin-top:-8%;
+font-family: Montserrat;
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: -0.015em;
+}
+.cls-1{
+background:#00C87B;
+}
+.cls-2{
+background:#E1DC52;
+}
+.cls-3,.cls-4,.cls-5,.cls-6{
+background:#CCCCCC;
+}
+.progress-bar {
+margin-top: 5%;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+}
+
+.progress-step {
+text-align: center;
+position: relative;
+}
+.progress-step:before,
+.progress-step:after {
+background-color: #056AE1;
+content: "";
+height: 2px;
+position: absolute;
+z-index: -1;
+top: 20px;
+}
+
+.progress-step:after {
+left: 50%;
+width: 100%;
+}
+
+.progress-step:last-of-type.is-active:after {
+background-color: #c0a359;
+}
+@media screen and (min-width: 640px) {
+.progress-step:first-of-type:before {
+right: 50%;
+width: 50%;
+}
+}
+
+@media screen and (max-width: 640px) {
+.progress-step:first-of-type:before,
+.progress-step:last-of-type:after {
+background-color: white !important;
+}
+}
+
+.progress-step:last-of-type:after {
+left: 50%;
+width: 50%;
+}
+
+.step-count {
+{% comment %} background-color: #c0a359; {% endcomment %}
+height: 30px;
+width: 30px;
+margin: 0 auto;
+border-radius: 50%;
+color: white;
+line-height: 30px;
+z-index: 100;
+{% comment %} border: 7px solid white; {% endcomment %}
+font-size: 0.8rem;
+font-weight: 500;
+}
+.step-count:before {
+counter-increment: step-count;
+}
+
+
+.step-count.is-active .step-description {
+font-weight: 500;
+}
+.step-count.is-active .step-count:after {
+background-color: #dad6ce;
+}
+
+.step-count.is-active .progress-step .step-count {
+background-color: #dad6ce;
+}
+
+.step-count.is-active .progress-step:after {
+background-color: #dad6ce;
+}
+
+.step-description {
+font-family: Montserrat;
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: -0.015em;
+}
+
+
+/* CSS END PROGRES BAR */
+
+/* CSS START MOBILE ORDER */
+
+.mobile-order li p, .mobile-order li p:after, .mobile-order li p:before { margin:0; padding:0; }
+
+.mobile-order input[type="button"] {
+margin-top: 20px;
+}
+.mobile-order .node {
+height: 10px;
+width: 10px;
+border-radius: 50%;
+display:inline-block;
+transition: all 1000ms ease;
+}
+
+.mobile-order .activated {
+box-shadow: 0px 0px 3px 2px rgba(194, 255, 194, 0.8);
+}
+
+.mobile-order .divider {
+height: 40px;
+width: 2px;
+margin-left: 4px;
+transition: all 800ms ease;
+}
+
+.mobile-order li p {
+display:inline-block;
+margin-left: 25px;
+}
+
+.mobile-order li {
+list-style: none;
+line-height: 1px;
+}
+
+
+.green{ background-color: rgba(92, 184, 92, 1) }
+.grey { background-color: rgba(201, 201, 201, 1); }
+
+/* CSS END MOBILE ORDER */
+h2.order-hed {
+margin-bottom: 3%;
+text-align: left;
+font-family: Montserrat;
+font-size: 35px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: -0.015em;
+}
+button.but-clss{
+width: -webkit-fill-available;
+padding: 5%;
+border-radius: 6px;
+border: 1px solid #18A0FB;
+background: #fff;
+color:#18A0FB;
+}
+table.dataTable th,
+table.dataTable td {
+white-space: nowrap;
+}
+table.table-bordered tr th{
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: -0.015em;
+text-align: left;
+}
+table.table-bordered tr td{
+padding: 1% 0;
+font-family: Montserrat;
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: -0.015em;
+text-align: left;
+}
+.p {
+text-align: center;
+padding-top: 140px;
+font-size: 14px;
+}
+table.table-bordered{
+width:100%;
+text-align: center;
+}
+@media(max-width:768px){
+.mobile-order{
+    display: block;
+    }
+    .progress-bar{
+    display: none;
+}
+}
+</style>
