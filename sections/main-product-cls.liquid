@@ -917,9 +917,42 @@ endfor
 
             </div>
 
+            
+
             {% endcase %}
             {% endfor %}
           </div>
+          <div class="sticky-cl">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+          {%- when 'price' -%}
+            <div class="price-cls-sticky">
+                <table>
+                <tbody>
+                    <tr>
+                    <th class="pr-th-cls">Price</th>     
+                      <td> <div class="price-area product-detail__gap-sm" {{ block.shopify_attributes }}>
+                    {% if current_variant.compare_at_price > current_variant.price %}
+                    <span class="was-price theme-money">{%- render "price", price: current_variant.compare_at_price -%}</span>
+                    {% endif %}
+                    <div class="price theme-money">{%- render "price", price: current_variant.price -%}</div>
+                    {% render 'unit-price', variant: current_variant %}
+                  </div></td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          <div class="extra-price">
+            <h2 class="del-cls">45 days delivery</h2>
+          </div>
+          <div class="stcky-btn">
+            {% render 'enquiry'%}
+          </div>
+
+        
+      {% endcase %}
+    {% endfor %}
+  </div>
 
             {%- for block in section.blocks -%}
             {%- case block.type -%}
@@ -3020,6 +3053,17 @@ h2.del-cls{
 .price-cls .price-area{
   {% comment %} border-bottom: 1px solid #000; {% endcomment %}
   {% comment %} padding-bottom: 3%; {% endcomment %}
+}
+.sticky-cl{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  opacity: 1;
+  z-index: 999;
+  align-items: center;
 }
 @media(max-width:768px){
   .main-cls-flx{
