@@ -84,9 +84,9 @@
         "media_crop": "center",
         "enable_zoom": true,
         "zoom_cursor": "standard",
-        "show_thumbnails": false,
+        "show_thumbnails": true,
         "enable_video_looping": false,
-        "scroll_to_variant_media": false,
+        "scroll_to_variant_media": true,
         "variant_media_grouping": false,
         "variant_media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
