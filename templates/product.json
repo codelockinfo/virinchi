@@ -77,7 +77,7 @@
       ],
       "settings": {
         "media_style": "one-column",
-        "sticky_behaviour": "none",
+        "sticky_behaviour": "top",
         "full_width": false,
         "show_backorder_text": true,
         "slide_nav_style": "arrows",
